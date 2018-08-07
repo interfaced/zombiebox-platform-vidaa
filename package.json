@@ -1,0 +1,24 @@
+{
+  "name": "zombiebox-platform-hisense",
+  "version": "0.1.0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/interfaced/zombiebox-platform-hisense/issues"
+  },
+  "homepage": "https://github.com/interfaced/zombiebox-platform-hisense",
+  "files": [
+    "lib/",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint index.js lib/"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.1",
+    "eslint-config-interfaced": "^0.5.0",
+    "eslint-plugin-goog": "^0.4.0",
+    "eslint-plugin-interfaced": "^0.4.1",
+    "zombiebox": "^1.0.0-alpha4"
+  }
+}
