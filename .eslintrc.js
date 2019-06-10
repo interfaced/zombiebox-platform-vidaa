@@ -15,5 +15,11 @@ module.exports = {
 	extends: 'interfaced',
 	settings: {
 		knownNamespaces
-	}
+	},
+	overrides: [
+		Object.assign({
+				files: ['index.js'],
+			}, require('eslint-config-interfaced/overrides/node')
+		)
+	]
 };
