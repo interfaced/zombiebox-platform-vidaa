@@ -1,25 +1,44 @@
 {
   "name": "zombiebox-platform-hisense",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/interfaced/zombiebox-platform-hisense/issues"
-  },
+  "author": "Interfaced (https://interfaced.tv)",
   "homepage": "https://github.com/interfaced/zombiebox-platform-hisense",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:interfaced/zombiebox-platform-hisense.git"
+  },
+  "keywords": [
+    "zombiebox",
+    "zombiebox-platform",
+    "smart-tv",
+    "hisense"
+  ],
   "files": [
     "lib/",
-    "index.js"
+    "index.js",
+    "CHANGELOG.md",
+    "LICENSE"
   ],
+  "engines": {
+    "node": ">=10",
+    "npm": ">=5"
+  },
   "scripts": {
-    "test": "npm run lint",
-    "lint": "eslint index.js lib/"
+    "lint": "eslint ."
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-interfaced": "^1.5.0",
-    "eslint-plugin-goog": "^1.0.0",
-    "eslint-plugin-interfaced": "^1.6.1",
-    "eslint-plugin-node": "^8.0.1",
-    "zombiebox": "^1.0.0-alpha4"
+    "eslint": "^6.8.0",
+    "eslint-import-resolver-zombiebox": "^1.0.1",
+    "eslint-config-interfaced": "^2.0.0",
+    "eslint-plugin-interfaced": "^2.0.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-header": "^3.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsdoc": "^21.0.0",
+    "zombiebox": "^2.6.1"
+  },
+  "peerDependencies": {
+    "zombiebox": "^2.6.1"
   }
 }

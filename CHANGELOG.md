@@ -1,3 +1,8 @@
+# 1.0.0 (05.02.20)
+
+* Migrate to ECMAScript modules
+* Support ZombieBox 2.6 
+
 # 0.1.2 (20.06.19)
 
 * Disable mouse
