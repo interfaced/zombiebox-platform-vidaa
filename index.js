@@ -1,10 +1,10 @@
 const path = require('path');
+const {AbstractPlatform} = require('zombiebox');
 
 
 /**
- * @implements {ZBPlatform}
  */
-class PlatformHisense {
+class Hisense extends AbstractPlatform {
 	/**
 	 * @override
 	 */
@@ -15,7 +15,7 @@ class PlatformHisense {
 	/**
 	 * @override
 	 */
-	getPublicDir() {
+	getSourcesDir() {
 		return path.join(__dirname, 'lib');
 	}
 
@@ -29,20 +29,12 @@ class PlatformHisense {
 	/**
 	 * @override
 	 */
-	buildApp(zbApp, distDir) {
-		const buildHelper = zbApp.getBuildHelper();
-
-		return buildHelper.writeIndexHtml(path.join(distDir, 'index.html'), this.getName())
-			.then((warnings) => {
-				buildHelper.copyCustomWebFiles(distDir);
-
-				return warnings;
-			});
+	pack(zbApp, distDir) {
+		// Do nothing, index.html is good enough as Hisense artifact
 	}
 }
 
 
 /**
- * @param {ZBApplication} zb
  */
-module.exports = PlatformHisense;
+module.exports = Hisense;
