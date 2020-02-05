@@ -21,7 +21,9 @@ module.exports = {
 			},
 			rules: {
 				'header/header': ['error', 'block', copyrightHeader],
-				'new-cap': 'off' // Most of Hisesnse APIs are in uppecase
+				'new-cap': ['error', {
+					'capIsNewExceptionPattern': '\.Hisense_'
+				}]
 			}
 		},
 		{
