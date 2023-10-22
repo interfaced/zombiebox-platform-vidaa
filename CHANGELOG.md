@@ -1,7 +1,11 @@
+# 1.0.2 (22.10.23)
+
+* Rename package from zombiebox-platform-hisense to zombiebox-platform-vidaa
+ 
 # 1.0.0 (05.02.20)
 
 * Migrate to ECMAScript modules
-* Support ZombieBox 2.6 
+* Support ZombieBox 2.6
 
 # 0.1.2 (20.06.19)
 
