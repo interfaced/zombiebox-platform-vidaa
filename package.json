@@ -1,18 +1,19 @@
 {
-  "name": "zombiebox-platform-hisense",
+  "name": "zombiebox-platform-vidaa",
   "version": "1.0.1",
   "license": "MIT",
   "author": "Interfaced (https://interfaced.tv)",
-  "homepage": "https://github.com/interfaced/zombiebox-platform-hisense",
+  "homepage": "https://github.com/interfaced/zombiebox-platform-vidaa",
   "repository": {
     "type": "git",
-    "url": "git@github.com:interfaced/zombiebox-platform-hisense.git"
+    "url": "git@github.com:interfaced/zombiebox-platform-vidaa.git"
   },
   "keywords": [
     "zombiebox",
     "zombiebox-platform",
     "smart-tv",
-    "hisense"
+    "hisense",
+    "vidaa"
   ],
   "files": [
     "lib/",

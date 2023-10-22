@@ -4,12 +4,12 @@ const {AbstractPlatform} = require('zombiebox');
 
 /**
  */
-class Hisense extends AbstractPlatform {
+class Vidaa extends AbstractPlatform {
 	/**
 	 * @override
 	 */
 	getName() {
-		return 'hisense';
+		return 'vidaa';
 	}
 
 	/**
@@ -30,11 +30,11 @@ class Hisense extends AbstractPlatform {
 	 * @override
 	 */
 	pack(zbApp, distDir) {
-		// Do nothing, index.html is good enough as Hisense artifact
+		// Do nothing, index.html is good enough as Vidaa artifact
 	}
 }
 
 
 /**
  */
-module.exports = Hisense;
+module.exports = Vidaa;
